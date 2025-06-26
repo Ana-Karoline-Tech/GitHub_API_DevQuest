@@ -103,7 +103,7 @@ main {
   width: 50%;
 }
 
-/* Solução de borda animada - BORDA MAIS FINA */
+/* Solução de borda animada - BORDA FINA */
 .container .profile-data .info img {
   width: 50%;
   border-radius: 50%;
@@ -178,38 +178,31 @@ main {
 }
 
 .container .profile-data .info p:hover {
-  transform: translateY(-2px);
+  transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 /* REPOSITORIES */
-.container .profile-data .repositories h2 {
-  margin-bottom: 30px;
-  text-align: center;
-}
 
-.container .profile-data .repositories ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.repository {
+    display: inline-block;
+    border: 1px solid #aaa;
+    border-radius: 8px;
+    padding: 10px 20px;
+    margin: 8px;
+    font-size: 1rem;
+    background: #fff;
+    transition: box-shadow 0.2s;
 }
-
-.container .profile-data .repositories ul li a {
-  padding: 20px;
-  border: 1px solid grey;
-  margin: 20px;
-  display: block;
-  border-radius: 7px;
-  transition: 0.3s ease-in-out;
+.repository a {
+    text-decoration: none;
+    color: inherit;
 }
-
-.container .profile-data .repositories ul li a:hover {
-  background-color: hotpink;
-  color: #fff;
-}
-
-.container .profile-data.hide {
-  display: none;
+.repository:hover {
+    box-shadow: 0 3px 8px #e20e91;
+     border:1.5px solid hotpink
+  
+    
 }
 
 @media (max-width: 1280px) {
